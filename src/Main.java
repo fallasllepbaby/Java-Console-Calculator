@@ -2,17 +2,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Calculator calculator = new Calculator();
         Operation operation = new Operation();
+
+        ConsoleWriter writer = new ConsoleWriter();
+        ConsoleReader reader = new ConsoleReader();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter num1");
-        operation.setNum1(scanner.nextDouble());
-        System.out.println("Enter num2");
-        operation.setNum2(scanner.nextDouble());
-        System.out.println("Enter operation (sum, sub, div, mul)");
-        operation.setType(scanner.next());
+        writer.write("Enter num1");
+        operation.setNum1(reader.readNumber());
+        writer.write("Enter num2");
+        operation.setNum2(reader.readNumber());
+        writer.write("Enter operation (sum, sub, div, mul)");
+        operation.setType(reader.readType());
         calculator.calculate(operation);
 
-        System.out.println(operation.getResult());
+        writer.write(String.valueOf(operation.getResult()));
     }
 }
