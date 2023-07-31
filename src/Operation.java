@@ -14,6 +14,13 @@ public class Operation {
         this.type = type;
     }
 
+    public Operation(double num1, double num2, String type, double result) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.type = type;
+        this.result = result;
+    }
+
     public void setNum1(double num1) {
         this.num1 = num1;
     }
