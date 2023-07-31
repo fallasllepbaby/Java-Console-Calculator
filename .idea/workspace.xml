@@ -8,10 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CollectionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,8 @@
       <workItem from="1690546021703" duration="595000" />
       <workItem from="1690619087025" duration="3800000" />
       <workItem from="1690706553163" duration="2344000" />
+      <workItem from="1690743525549" duration="3747000" />
+      <workItem from="1690789794229" duration="3001000" />
     </task>
     <servers />
   </component>

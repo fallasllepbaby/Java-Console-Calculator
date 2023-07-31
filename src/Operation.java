@@ -55,4 +55,8 @@ public class Operation {
                 ", result=" + result +
                 '}';
     }
+
+    public String toStringForStorage() {
+        return num1 + " " + num2 + " " + type + " " + result;
+    }
 }
