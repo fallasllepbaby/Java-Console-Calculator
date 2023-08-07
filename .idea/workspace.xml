@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee946ab5-e9bb-4047-b041-e42234526176" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CollectionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OperationsStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Storage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleIO/ConsoleReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleIO/ConsoleWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storages/MainStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OperationsStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storages/OperationsStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/MailValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/MailValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/PasswordValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/PasswordValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Validation/ValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/ValidationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -88,7 +89,7 @@
       <workItem from="1691307077067" duration="4972000" />
       <workItem from="1691333786950" duration="13000" />
       <workItem from="1691419044069" duration="914000" />
-      <workItem from="1691422700691" duration="4292000" />
+      <workItem from="1691422700691" duration="6074000" />
     </task>
     <servers />
   </component>
