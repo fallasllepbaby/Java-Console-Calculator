@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee946ab5-e9bb-4047-b041-e42234526176" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollectionStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OperationsStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileStorage.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/storage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Storage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -26,26 +33,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2TBuz3yv6cnrANcyNnSfZwI6egY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/JAVA/Java-Console-Calculator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +72,23 @@
       <workItem from="1690619087025" duration="3800000" />
       <workItem from="1690706553163" duration="2344000" />
       <workItem from="1690743525549" duration="3747000" />
-      <workItem from="1690789794229" duration="8518000" />
+      <workItem from="1690789794229" duration="9399000" />
+      <workItem from="1690833057907" duration="589000" />
+      <workItem from="1690906466420" duration="423000" />
+      <workItem from="1690906908225" duration="1260000" />
+      <workItem from="1690975106539" duration="102000" />
+      <workItem from="1691064888243" duration="7152000" />
+      <workItem from="1691139746153" duration="116000" />
+      <workItem from="1691166996940" duration="639000" />
+      <workItem from="1691178543843" duration="3340000" />
+      <workItem from="1691219367444" duration="183000" />
+      <workItem from="1691235301646" duration="5773000" />
+      <workItem from="1691267865254" duration="1004000" />
+      <workItem from="1691303735666" duration="1650000" />
+      <workItem from="1691307077067" duration="4972000" />
+      <workItem from="1691333786950" duration="13000" />
+      <workItem from="1691419044069" duration="914000" />
+      <workItem from="1691422700691" duration="4292000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,7 @@ import java.util.Iterator;
 public class Calculator {
     private ConsoleWriter writer = new ConsoleWriter();
     private ConsoleReader reader = new ConsoleReader();
-    private Storage storage = new FileStorage();
+    private OperationsStorage storage = new OperationsStorage();
 
     private void calculate(Operation operation) {
         switch (operation.getType()) {
@@ -26,49 +26,30 @@ public class Calculator {
         }
     }
 
-    private void showHistory() {
+    public void showHistory() {
         Iterator<Operation> iterator = storage.getAllOperations().iterator();
         while (iterator.hasNext()) {
             writer.write(iterator.next().toString());
         }
     }
 
-    private void createOperation() {
+    public void createOperation() {
         Operation operation = new Operation();
         writer.write("Enter num1");
         operation.setNum1(reader.readNumber());
         writer.write("Enter num2");
         operation.setNum2(reader.readNumber());
         writer.write("Enter operation (sum, sub, div, mul)");
-        operation.setType(reader.readType());
+        operation.setType(reader.readString());
         calculate(operation);
         writer.write(String.valueOf(operation.getResult()));
     }
 
-    public void getMenu() {
-        boolean check = true;
-        int action;
+    public OperationsStorage getStorage() {
+        return storage;
+    }
 
-        while (check) {
-            writer.write("1) Calculate expression");
-            writer.write("2) Show history");
-            writer.write("3) Exit");
-            writer.write("Enter your action: ");
-            action = (int) reader.readNumber();
-            switch (action) {
-                case 1:
-                    createOperation();
-                    break;
-                case 2:
-                    showHistory();
-                    break;
-                case 3:
-                    check = false;
-                    break;
-                default:
-                    writer.write("Enter correct action!");
-                    break;
-            }
-        }
+    public void setStorage(OperationsStorage storage) {
+        this.storage = storage;
     }
 }
