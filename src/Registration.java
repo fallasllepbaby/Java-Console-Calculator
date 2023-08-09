@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Registration {
-    private ConsoleReader reader = new ConsoleReader();
-    private ConsoleWriter writer = new ConsoleWriter();
+    private ConsoleReaderService reader = new ConsoleReaderService();
+    private ConsoleWriterService writer = new ConsoleWriterService();
     private ValidationService mailValidationService = new MailValidationService();
     private ValidationService passwordValidationService = new PasswordValidationService();
     private ArrayList<User> users = new ArrayList<>();

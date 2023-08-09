@@ -1,8 +1,8 @@
 import java.util.Iterator;
 
 public class Calculator {
-    private ConsoleWriter writer = new ConsoleWriter();
-    private ConsoleReader reader = new ConsoleReader();
+    private ConsoleWriterService writer = new ConsoleWriterService();
+    private ConsoleReaderService reader = new ConsoleReaderService();
     private InFileOperationsStorage storage;
 
     public Calculator(User user) {

@@ -1,7 +1,7 @@
 public class Application {
 
-    private ConsoleWriter writer = new ConsoleWriter();
-    private ConsoleReader reader = new ConsoleReader();
+    private ConsoleWriterService writer = new ConsoleWriterService();
+    private ConsoleReaderService reader = new ConsoleReaderService();
 
     private Registration registration = new Registration();
     private Calculator calculator;

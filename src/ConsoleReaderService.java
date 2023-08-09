@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ConsoleReader {
+public class ConsoleReaderService {
     public double readNumber() {
         return scan().nextDouble();
     }
