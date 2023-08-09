@@ -3,7 +3,11 @@ import java.util.Iterator;
 public class Calculator {
     private ConsoleWriter writer = new ConsoleWriter();
     private ConsoleReader reader = new ConsoleReader();
-    private OperationsStorage storage = new OperationsStorage();
+    private InFileOperationsStorage storage;
+
+    public Calculator(User user) {
+        storage = new InFileOperationsStorage(user.getMail());
+    }
 
     private void calculate(Operation operation) {
         switch (operation.getType()) {
@@ -45,11 +49,11 @@ public class Calculator {
         writer.write(String.valueOf(operation.getResult()));
     }
 
-    public OperationsStorage getStorage() {
+    public InFileOperationsStorage getStorage() {
         return storage;
     }
 
-    public void setStorage(OperationsStorage storage) {
+    public void setStorage(InFileOperationsStorage storage) {
         this.storage = storage;
     }
 }

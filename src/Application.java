@@ -42,7 +42,7 @@ public class Application {
                 case 2:
                     registration.signUp();
                     int amountOfUsers = registration.getUsers().size();
-                    calculator = new Calculator();
+                    calculator = new Calculator(registration.getUsers().get(amountOfUsers - 1));
                     mainStorage.getMainStorage().put(registration.getUsers().get(amountOfUsers - 1), calculator.getStorage());
                     break;
                 case 3:

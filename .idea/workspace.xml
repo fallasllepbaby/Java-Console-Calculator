@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee946ab5-e9bb-4047-b041-e42234526176" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_10_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-Console-Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-Console-Calculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleIO/ConsoleReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleIO/ConsoleWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storages/MainStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OperationsStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Storages/OperationsStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/MailValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/MailValidationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/PasswordValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/PasswordValidationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Validation/ValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Validation/ValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OperationsStorage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +43,28 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/JAVA/Java-Console-Calculator",
+    "last_opened_file_path": "D:/JAVA/Java-Console-Calculator/lib/gson-2.10.1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA\Java-Console-Calculator\lib" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -89,7 +94,9 @@
       <workItem from="1691307077067" duration="4972000" />
       <workItem from="1691333786950" duration="13000" />
       <workItem from="1691419044069" duration="914000" />
-      <workItem from="1691422700691" duration="6074000" />
+      <workItem from="1691422700691" duration="6331000" />
+      <workItem from="1691529452647" duration="51000" />
+      <workItem from="1691562707085" duration="9231000" />
     </task>
     <servers />
   </component>
