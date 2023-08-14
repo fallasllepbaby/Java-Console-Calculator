@@ -10,22 +10,25 @@ public class Calculator {
     }
 
     private void calculate(Operation operation) {
+        Thread saveThread = new Thread(() -> {
+            storage.save(operation);
+        });
         switch (operation.getType()) {
             case "sum" -> {
                 operation.setResult(operation.getNum1() + operation.getNum2());
-                storage.save(operation);
+                saveThread.start();
             }
             case "sub" -> {
                 operation.setResult(operation.getNum1() - operation.getNum2());
-                storage.save(operation);
+                saveThread.start();
             }
             case "div" -> {
                 operation.setResult(operation.getNum1() / operation.getNum2());
-                storage.save(operation);
+                saveThread.start();
             }
             case "mul" -> {
                 operation.setResult(operation.getNum1() * operation.getNum2());
-                storage.save(operation);
+                saveThread.start();
             }
         }
     }

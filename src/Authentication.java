@@ -1,16 +1,17 @@
 import java.util.ArrayList;
 
-public class Registration {
+public class Authentication {
     private ConsoleReaderService reader = new ConsoleReaderService();
     private ConsoleWriterService writer = new ConsoleWriterService();
     private ValidationService mailValidationService = new MailValidationService();
     private ValidationService passwordValidationService = new PasswordValidationService();
     private ArrayList<User> users = new ArrayList<>();
 
-    public Registration(UserStorage storage) {
-        users = storage.getUsers();
+    public Authentication(UserStorage userStorage) {
+        this.users = userStorage.getUsers();
     }
-    public void signUp() {
+
+    public User logIn() {
         writer.write("Enter your mail: ");
         String mail = reader.readString();
         while (mailValidationService.validate(mail)) {
@@ -23,8 +24,12 @@ public class Registration {
             writer.write("Try one more time: ");
             password = reader.readString();
         }
-        User user = new User(mail, password);
-        users.add(user);
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).getMail().equals(mail) && users.get(i).getPassword().equals(password)) {
+                writer.write("Welcome " + mail);
+                return users.get(i);
+            }
+        }
+        return null;
     }
-
 }

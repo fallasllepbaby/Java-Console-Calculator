@@ -2,8 +2,10 @@ public class Application {
 
     private ConsoleWriterService writer = new ConsoleWriterService();
     private ConsoleReaderService reader = new ConsoleReaderService();
-
-    private Registration registration = new Registration();
+    
+    private UserStorage userStorage = new UserStorage();
+    private Registration registration = new Registration(userStorage);
+    private Authentication authentication = new Authentication(userStorage);
     private Calculator calculator;
     private MainStorage mainStorage = new MainStorage();
     private ConsoleSession consoleSession;
@@ -30,7 +32,7 @@ public class Application {
             action = (int) reader.readNumber();
             switch (action) {
                 case 1:
-                    User user = registration.logIn();
+                    User user = authentication.logIn();
                     if (user == null) {
                         writer.write("There is no such user. Try one more time.");
                     } else {
@@ -41,9 +43,9 @@ public class Application {
                     break;
                 case 2:
                     registration.signUp();
-                    int amountOfUsers = registration.getUsers().size();
-                    calculator = new Calculator(registration.getUsers().get(amountOfUsers - 1));
-                    mainStorage.getMainStorage().put(registration.getUsers().get(amountOfUsers - 1), calculator.getStorage());
+                    int amountOfUsers = userStorage.getUsers().size();
+                    calculator = new Calculator(userStorage.getUsers().get(amountOfUsers - 1));
+                    mainStorage.getMainStorage().put(userStorage.getUsers().get(amountOfUsers - 1), calculator.getStorage());
                     break;
                 case 3:
                     check = false;

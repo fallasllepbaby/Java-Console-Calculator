@@ -7,6 +7,10 @@
     <list default="true" id="ee946ab5-e9bb-4047-b041-e42234526176" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filesJSON/danik.laparevich@bk.ru.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/filesJSON/ruslan@bk.ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/filesJSON/ruslan@bk.ru.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,7 +46,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/Java-Console-Calculator/lib/gson-2.10.1.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/Java-Console-Calculator&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -92,7 +96,11 @@
       <workItem from="1691422700691" duration="6331000" />
       <workItem from="1691529452647" duration="51000" />
       <workItem from="1691562707085" duration="9231000" />
-      <workItem from="1691600244237" duration="1473000" />
+      <workItem from="1691600244237" duration="5421000" />
+      <workItem from="1691606693871" duration="81000" />
+      <workItem from="1691846229264" duration="660000" />
+      <workItem from="1691872833749" duration="2593000" />
+      <workItem from="1691905057436" duration="786000" />
     </task>
     <servers />
   </component>
