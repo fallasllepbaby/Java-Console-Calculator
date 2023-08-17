@@ -1,17 +1,24 @@
+import java.sql.SQLException;
 import java.util.Iterator;
 
 public class Calculator {
     private ConsoleWriterService writer = new ConsoleWriterService();
     private ConsoleReaderService reader = new ConsoleReaderService();
-    private InFileOperationsStorage storage;
+    private JdbcSample jdbcSample = new JdbcSample();
+    private User user;
 
     public Calculator(User user) {
-        storage = new InFileOperationsStorage(user.getMail());
+        this.user = user;
     }
+
 
     private void calculate(Operation operation) {
         Thread saveThread = new Thread(() -> {
-            storage.save(operation);
+            try {
+                jdbcSample.update(user, operation);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         });
         switch (operation.getType()) {
             case "sum" -> {
@@ -33,11 +40,8 @@ public class Calculator {
         }
     }
 
-    public void showHistory() {
-        Iterator<Operation> iterator = storage.getAllOperations().iterator();
-        while (iterator.hasNext()) {
-            writer.write(iterator.next().toString());
-        }
+    public void showHistory() throws SQLException {
+        writer.write(jdbcSample.getAllOperations(user));
     }
 
     public void createOperation() {
@@ -52,11 +56,4 @@ public class Calculator {
         writer.write(String.valueOf(operation.getResult()));
     }
 
-    public InFileOperationsStorage getStorage() {
-        return storage;
-    }
-
-    public void setStorage(InFileOperationsStorage storage) {
-        this.storage = storage;
-    }
 }

@@ -1,3 +1,5 @@
+import java.sql.SQLException;
+
 public class Application {
 
     private ConsoleWriterService writer = new ConsoleWriterService();
@@ -7,7 +9,8 @@ public class Application {
     private Registration registration = new Registration(userStorage);
     private Authentication authentication = new Authentication(userStorage);
     private Calculator calculator;
-    private MainStorage mainStorage = new MainStorage();
+    private JdbcSample jdbcSample = new JdbcSample();
+
     private ConsoleSession consoleSession;
     private boolean mainCheck = true;
     public void start() {
@@ -37,15 +40,19 @@ public class Application {
                         writer.write("There is no such user. Try one more time.");
                     } else {
                         consoleSession = new ConsoleSession();
-                        calculator.setStorage(mainStorage.getMainStorage().get(user));
+                        calculator = new Calculator(user);
                         check = false;
                     }
                     break;
                 case 2:
                     registration.signUp();
                     int amountOfUsers = userStorage.getUsers().size();
-                    calculator = new Calculator(userStorage.getUsers().get(amountOfUsers - 1));
-                    mainStorage.getMainStorage().put(userStorage.getUsers().get(amountOfUsers - 1), calculator.getStorage());
+                    try {
+                        jdbcSample.insertUserMail(userStorage.getUsers().get(amountOfUsers - 1));
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
+
                     break;
                 case 3:
                     check = false;
@@ -73,7 +80,7 @@ public class Application {
                     calculator.createOperation();
                     break;
                 case 2:
-                    calculator.showHistory();
+                //    calculator.showHistory();
                     break;
                 case 3:
                     consoleSession = null;
